@@ -1,5 +1,6 @@
 from django.urls import path
 from note.views import LoginView, LogoutView, NoteDetail, NoteList, RegisterView
+ 
 urlpatterns = [
     path("user/register/", RegisterView.as_view(), name="register"),
     path("user/login/", LoginView.as_view(), name="login"),
